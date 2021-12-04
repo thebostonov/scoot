@@ -3,14 +3,15 @@
     background-image: url("../images/heroback.jpg");
     background-repeat:no-repeat;
     background-size: cover;
+    background-position: center right;
     position: relative;
-    .hero__textbox {
+    &__textbox {
         display: flex;
         flex-direction: column;
         width: 100%;
         max-width: 500px;
     }
-    .hero__heading {
+    &__heading {
         margin: 0;
         padding: 0;
         margin-bottom: 40px;
@@ -20,7 +21,7 @@
         letter-spacing: -2.5px;
         color: #FFFFFF;
     }
-    .hero__desc {
+    &__desc {
         margin: 0;
         padding: 0;
         margin-bottom: 40px;
@@ -32,16 +33,6 @@
     }
     &__btn{
         margin-left: 95px;
-    }
-    .hero__position-line{
-        position: absolute;
-        left: 0;
-        top: 338px;
-    }
-    .hero__position-strelka{
-        position: absolute;
-        right: 289px;
-        top: 338px;
     }
 }
 
@@ -58,3 +49,29 @@ only screen and (                min-resolution: 2dppx) {
       background-image: url("../images/heroback@2x.jpg");
   }
 }
+@media only screen and (max-width:1024px){
+    .hero{
+        padding-top: 137px;
+        padding-bottom: 217px;
+        &__container{
+            display: flex;
+            justify-content: center;
+        }
+        &__textbox {
+            align-items: center;
+            text-align: center;
+        }
+        &__heading{
+            margin-bottom: 24px;
+        }
+        &__desc{
+            padding-left: 0px;
+            margin-bottom: 32px;
+        }
+        &__btn{
+            margin-left: 0px;
+        }
+    }
+}
+
+ 

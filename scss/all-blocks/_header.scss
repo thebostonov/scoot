@@ -40,30 +40,11 @@
     }
    
 }
-///////////////  TABLET  /////////////////
 
-// HEADER OF MEDIA CODES HAS BEEN WRITTEN FOR MAX-WIDTH:699PX.
-@media only screen and (max-width:699px){
-    .header{
-        &__logo-link {
-            display: inline-block;
-            margin-right: 40px;
-        }      
-    }
-}
-// HEADER OF MEDIA CODES HAS BEEN WRITTEN FOR MAX-WIDTH:669PX.
-@media only screen and (max-width:669px){
-    .header{
-        &__logo-link {
-            display: inline-block;
-            margin-right: 30px;
-        }      
-    }
-}
 ///////////////  MOBILE  /////////////////
 
-// HEADER OF MEDIA CODES HAS BEEN WRITTEN FOR MAX-WIDTH:649PX.
-@media only screen and (max-width:649px){
+// HEADER OF MEDIA CODES HAS BEEN WRITTEN FOR MAX-WIDTH:767PX.
+@media only screen and (max-width:767px){
     .header{
         position: relative;
         &__container{
