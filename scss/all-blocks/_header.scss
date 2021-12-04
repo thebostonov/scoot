@@ -26,7 +26,7 @@
     &__item-link:hover{
         color:#FCB72B;
     }
-    .header__nav{
+    &__nav{
         display: none;
     }
     .nav-wrapper__hamburger{
@@ -62,7 +62,7 @@
         .nav-wrapper__hamburger{
             display: inline-block;
         }
-        .header__nav {
+        &__nav {
             display: none;
             flex-direction: column;
             justify-content: space-between;
@@ -74,22 +74,22 @@
             top: 100%;
             left: 0;
         }
-        .header__list {
+        &__list {
             display: flex;
             flex-direction: column;
             margin: 0;
             padding: 0;
         }
-        .header__item {
+        &__item {
             margin-bottom: 24px;
         }
-        .header__item-link {
+        &__item-link {
             font-family: 'Space Mono 700';
             font-size: 18px;
             line-height: 25px;
             color: #E5ECF4;
         }
-        .header__item-link:hover{
+        &__item-link:hover{
             color:#FCB72B;
         }
         .nav-wrapper--open .header__nav{

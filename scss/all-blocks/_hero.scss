@@ -49,7 +49,7 @@ only screen and (                min-resolution: 2dppx) {
       background-image: url("../images/heroback@2x.jpg");
   }
 }
-@media only screen and (max-width:1024px){
+@media only screen and (max-width:1023px){
     .hero{
         padding-top: 137px;
         padding-bottom: 217px;
@@ -70,6 +70,18 @@ only screen and (                min-resolution: 2dppx) {
         }
         &__btn{
             margin-left: 0px;
+        }
+    }
+}
+@media only screen and (max-width:767px){
+    .hero{
+        &__heading{
+            font-size: 40px;
+            line-height: 40px;      
+        }
+        &__desc{
+            padding-left: 0px;
+            margin-bottom: 35px;
         }
     }
 }

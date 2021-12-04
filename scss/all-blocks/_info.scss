@@ -1,0 +1,111 @@
+.info{
+    &__list {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 330px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        width: 100%;
+       
+    }
+    &__item:last-child{
+        background-image: url("../images/payment.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center right;
+    }
+    &__item:not(:last-child){
+        margin-bottom: 155px;
+    }
+    &__item:nth-child(even){
+        flex-direction: row-reverse;
+    }
+    &__textbox {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 445px;
+    }
+    &__heading {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 24px;
+        font-family: 'Space Mono 700';
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #495567;
+    }
+    &__desc {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 40px;
+        font-family:'Lexend Deca';
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+    }
+    
+}
+@media only screen and (max-width:1023px){
+    .info{
+        &__list{
+            margin-bottom: 104px;
+        }
+        &__item{
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        &__item:not(:last-child){
+            margin-bottom: 128px;
+        }
+        &__item:last-child{
+            height: 813px;
+            background-size: 604px 445px;
+            background-position: center top;
+        }
+        &__item:nth-child(even){
+            flex-direction: column-reverse;
+        }
+        &__pic{
+            margin-bottom: 45px;
+        }
+        &__textbox {
+            align-items:center;
+            text-align: center;
+        }
+        &__heading{
+            margin-bottom: 40px;
+        }
+    }
+}
+@media only screen and (max-width:767px){
+    .info{
+        &__list{
+            margin-bottom: 120px;
+        }
+        &__item:not(:last-child){
+            margin-bottom: 120px;
+        }
+        &__pic{
+            margin-bottom: 55px;
+        }
+        &__heading{
+            margin-bottom: 32px;
+            font-size: 32px;
+            line-height: 32px;
+        }
+        &__desc{
+            margin-bottom: 32px;
+        }
+        &__pic{
+            width: 311px;
+            height: 311px;
+        }
+    }
+}
