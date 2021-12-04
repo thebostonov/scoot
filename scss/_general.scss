@@ -8,13 +8,15 @@ html{
 *::after,
 *::before{
     box-sizing: inherit;
+    text-decoration: none;
+    list-style: none;
 }
 
 body{
     display: flex;
     flex-direction: column;
     height: 100%;
-    font-family: "Arial", sans-serif;
+    font-family: 'Space Mono', sans-serif;
     font-size: 16px;
     line-height: 1.5;
 }

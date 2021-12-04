@@ -1,0 +1,31 @@
+.sitenav{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;  
+    white-space: nowrap;  
+    &__list {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    &__item + &__item{
+        margin-left: 32px;
+    }
+    &__item-link {
+        font-family: 'Space Mono 700';
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;       
+    }
+    &__item-link:hover{
+        color:#FCB72B;
+    }
+}
+// SITENAV OF MEDIA CODES HAS BEEN WRITTEN FOR MAX-WIDTH:649PX.
+@media only screen and (max-width:649px){
+    .sitenav{
+        display: none;  
+    }
+}

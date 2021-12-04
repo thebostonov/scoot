@@ -1,0 +1,122 @@
+.header{
+    padding-top: 22px;
+    padding-bottom: 21px;
+    position: relative;
+    &__container{
+        display: flex;
+        align-items:center;
+    }
+    &__hidden{
+        display: none;
+    }
+    &__logo-link {
+        display: inline-block;
+        margin-right: 58px;
+    }
+    &__logo-link:hover{
+        opacity: 0.8;
+    }
+    &__logo-link:active{
+        opacity: 0.6;
+    }
+    &__logo-img {
+        width: 108px;
+        height: 29px;
+    }
+    &__item-link:hover{
+        color:#FCB72B;
+    }
+    .header__nav{
+        display: none;
+    }
+    .nav-wrapper__hamburger{
+        display: none;
+        width: 20px;
+        height: 16px;
+        background-image: url("../images/bars.svg");
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+    }
+   
+}
+///////////////  TABLET  /////////////////
+
+// HEADER OF MEDIA CODES HAS BEEN WRITTEN FOR MAX-WIDTH:699PX.
+@media only screen and (max-width:699px){
+    .header{
+        &__logo-link {
+            display: inline-block;
+            margin-right: 40px;
+        }      
+    }
+}
+// HEADER OF MEDIA CODES HAS BEEN WRITTEN FOR MAX-WIDTH:669PX.
+@media only screen and (max-width:669px){
+    .header{
+        &__logo-link {
+            display: inline-block;
+            margin-right: 30px;
+        }      
+    }
+}
+///////////////  MOBILE  /////////////////
+
+// HEADER OF MEDIA CODES HAS BEEN WRITTEN FOR MAX-WIDTH:649PX.
+@media only screen and (max-width:649px){
+    .header{
+        position: relative;
+        &__container{
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items:center;
+        }
+        &__logo-link {
+            display: inline-block;
+            margin-right: 0px;
+        }
+        &__hidden{
+            display: inline-block;
+        }
+        .nav-wrapper__hamburger{
+            display: inline-block;
+        }
+        .header__nav {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 68vw;
+            height: 100vh;
+            background-color:#333A44;
+            padding: 64px 32px 24px 32px;
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+        .header__list {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        }
+        .header__item {
+            margin-bottom: 24px;
+        }
+        .header__item-link {
+            font-family: 'Space Mono 700';
+            font-size: 18px;
+            line-height: 25px;
+            color: #E5ECF4;
+        }
+        .header__item-link:hover{
+            color:#FCB72B;
+        }
+        .nav-wrapper--open .header__nav{
+            display: flex;
+        }
+        .nav-wrapper--open .nav-wrapper__hamburger{
+            background-image:url("../images/timesolid.svg")
+        }
+
+    }
+}
