@@ -1,10 +1,4 @@
 .info{
-    &__container{
-        width: 100%;
-        max-width: 1157px;
-        margin: 0 auto;
-        padding-right: 165px;
-    }
     &__list {
         display: flex;
         flex-direction: column;
@@ -14,24 +8,9 @@
     }
     &__item {
         display: flex;
+        justify-content: space-between;
         align-items: center;
         width: 100%;
-        padding-right: 165px;
-        background-repeat: no-repeat;
-        background-size: 603px 445px;
-        background-position: center right -165px;
-       
-    }
-    &__item:nth-child(1){
-        background-image: url("../images/woman.png");
-    }
-    &__item:nth-child(2){
-        background-image: url("../images/city.png");
-        background-position: center left;
-        margin-left: 0px;
-    }
-    &__item:nth-child(3){
-        background-image: url("../images/payment.png");
     }
     &__item:not(:last-child){
         margin-bottom: 155px;
@@ -44,7 +23,6 @@
         flex-direction: column;
         width: 100%;
         max-width: 445px;
-        padding: 65px 0px;
     }
     &__heading {
         margin: 0;
@@ -65,7 +43,31 @@
         line-height: 25px;
         color: #939CAA;
     }
+    &__circle-img{
+        display: inline-block;
+        width: 445px;
+        height: 445px;
+        border-radius: 50%;
+        background-image:url("../images/payment.jpg");
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
     
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  /* Retina-specific stuff here */
+  .info{
+      &__circle-img{
+          background-image: url("../images/payment@2x.jpg");
+      }
+  }
 }
 
 @media only screen and (max-width:1023px){
@@ -76,19 +78,18 @@
         &__item{
             flex-direction: column-reverse;
             align-items: center;
+            
         }
         &__item:not(:last-child){
             margin-bottom: 128px;
-        }
-        &__item:last-child{
-            height: 813px;
-            background-size: 604px 445px;
-            background-position: center top;
         }
         &__item:nth-child(even){
             flex-direction: column-reverse;
         }
         &__pic{
+            margin-bottom: 45px;
+        }
+        &__circle-img{
             margin-bottom: 45px;
         }
         &__textbox {
@@ -100,6 +101,7 @@
         }
     }
 }
+
 @media only screen and (max-width:767px){
     .info{
         &__list{
@@ -122,6 +124,10 @@
         &__pic{
             width: 311px;
             height: 311px;
+        }
+        &__circle-img{
+            width: 311px;
+            height: 311px; 
         }
     }
 }
