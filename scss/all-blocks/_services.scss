@@ -40,6 +40,8 @@
     }
 }
 
+
+///////////////  TABLET  /////////////////
 @media only screen and (max-width:1023px){
     .services{
         &__container{
@@ -69,6 +71,7 @@
         }
     }
 }
+///////////////  MOBILE  /////////////////
 @media only screen and (max-width:767px){
     .services{
         padding: 120px 0px;
