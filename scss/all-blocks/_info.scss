@@ -65,7 +65,7 @@ only screen and (                min-resolution: 2dppx) {
   /* Retina-specific stuff here */
   .info{
       &__circle-img{
-        //   background-image: url("../images/payment@2x.jpg");
+          background-image: url("../images/payment@2x.jpg");
       }
   }
 }

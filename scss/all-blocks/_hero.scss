@@ -47,7 +47,9 @@ only screen and (                min-resolution: 2dppx) {
   
   /* Retina-specific stuff here */
   .hero{
-      background-image: url("../images/heroback@2x.jpg");
+    &__container{
+        background-image: url("../images/heroback@2x.jpg");
+    }
   }
 }
 
@@ -55,11 +57,11 @@ only screen and (                min-resolution: 2dppx) {
 ///////////////  TABLET  /////////////////
 @media only screen and (max-width:1023px){
     .hero{
-        padding-top: 137px;
-        padding-bottom: 217px;
         &__container{
             display: flex;
             justify-content: center;
+            padding-top: 137px;
+            padding-bottom: 217px;
         }
         &__textbox {
             align-items: center;
