@@ -1,10 +1,11 @@
 .hero{
-    padding: 153px 0px;
-    background-image: url("../images/heroback.jpg");
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-position: center right;
-    position: relative;
+    &__container{
+        padding: 153px 0px;
+        background-image: url("../images/heroback.jpg");
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position: center right;  
+    }
     &__textbox {
         display: flex;
         flex-direction: column;
@@ -36,19 +37,19 @@
     }
 }
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) { 
+// @media
+// only screen and (-webkit-min-device-pixel-ratio: 2),
+// only screen and (   min--moz-device-pixel-ratio: 2),
+// only screen and (     -o-min-device-pixel-ratio: 2/1),
+// only screen and (        min-device-pixel-ratio: 2),
+// only screen and (                min-resolution: 192dpi),
+// only screen and (                min-resolution: 2dppx) { 
   
-  /* Retina-specific stuff here */
-  .hero{
-      background-image: url("../images/heroback@2x.jpg");
-  }
-}
+//   /* Retina-specific stuff here */
+//   .hero{
+//       background-image: url("../images/heroback@2x.jpg");
+//   }
+// }
 @media only screen and (max-width:1023px){
     .hero{
         padding-top: 137px;

@@ -1,4 +1,10 @@
 .info{
+    &__container{
+        width: 100%;
+        max-width: 1157px;
+        margin: 0 auto;
+        padding-right: 165px;
+    }
     &__list {
         display: flex;
         flex-direction: column;
@@ -9,15 +15,23 @@
     &__item {
         display: flex;
         align-items: center;
-        justify-content:space-between;
         width: 100%;
+        padding-right: 165px;
+        background-repeat: no-repeat;
+        background-size: 603px 445px;
+        background-position: center right -165px;
        
     }
-    &__item:last-child{
+    &__item:nth-child(1){
+        background-image: url("../images/woman.png");
+    }
+    &__item:nth-child(2){
+        background-image: url("../images/city.png");
+        background-position: center left;
+        margin-left: 0px;
+    }
+    &__item:nth-child(3){
         background-image: url("../images/payment.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center right;
     }
     &__item:not(:last-child){
         margin-bottom: 155px;
@@ -30,6 +44,7 @@
         flex-direction: column;
         width: 100%;
         max-width: 445px;
+        padding: 65px 0px;
     }
     &__heading {
         margin: 0;
@@ -52,6 +67,7 @@
     }
     
 }
+
 @media only screen and (max-width:1023px){
     .info{
         &__list{
